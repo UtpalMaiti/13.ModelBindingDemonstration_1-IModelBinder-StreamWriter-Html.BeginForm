@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BookAppointment</title>
+</head>
+<body>
+    <div> 
+        <h2>Welcome to Appointment Booking Screen...</h2>
+        @using (Html.BeginForm())
+        {
+            <p>
+                <label>Name : <input type="text" name="Name" /></label>
+            </p>
+            <p>
+                <label>Email ID : <input type="text" name="EmailId" /></label>
+            </p>
+            <p>
+                <label>Contact Number : <input type="text" name="ContactNo" /></label>
+            </p>
+            <p>
+                <label>Day : <input type="text" name="Day" /></label>
+            </p>
+            <p>
+                <label>Month : <input type="text" name="Month" /></label>
+            </p>
+            <p>
+                <label>Year : <input type="text" name="Year" /></label>
+            </p>
+            <button>Book</button>
+        }
+    </div>
+</body>
+</html>

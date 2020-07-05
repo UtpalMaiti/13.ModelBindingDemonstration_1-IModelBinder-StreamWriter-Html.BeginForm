@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>Understanding the Concept of Model Binding...</h2>
+        <p>
+            @Html.ActionLink("Click here to Create New Employee","CreateEmployee")
+        </p>
+        @using (Html.BeginForm(new { action = "EditEmployee", id = 111 }))
+        {
+            <p>
+                <label>
+                    Employee ID : <input type="text" name="Id" />
+                </label>
+                <button>Edit</button>
+            </p>
+        }
+    </div>
+</body>
+</html>

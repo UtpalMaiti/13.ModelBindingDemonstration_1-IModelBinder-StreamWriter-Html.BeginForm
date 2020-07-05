@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateEmployee</title>
+</head>
+<body>
+    <div> 
+        <h2>Understanding Model Binding...</h2>
+        <h2>Enter New Employee Details...</h2>
+        @using (Html.BeginForm())
+        {
+            <p>
+                <label>Employee ID : <input type="text" name="Id" /></label>
+            </p>
+            <p>
+                <label>Employee Name : <input type="text" name="Name" /></label>
+            </p>
+            <p>
+                <label>Employee Location : <input type="text" name="Location" /></label>
+            </p>
+            <p>
+                <label>Employee Salary : <input type="text" name="Salary" /></label>
+            </p>
+            <h2>Current Address : </h2>
+            <p>
+                <label>Address Line-1 : <input type="text" name="CurrentAddress.AddressLine1" /></label>
+            </p>
+            <p>
+                <label>Address Line-2 : <input type="text" name="CurrentAddress.AddressLine2" /></label>
+            </p>
+            <p>
+                <label>City : <input type="text" name="CurrentAddress.City" /></label>
+            </p>
+            <p>
+                <label>Y : <input type="text" name="CurrentAddress.CustomZ.Y" /></label>
+            </p>
+
+            <button>Create</button>
+        }
+    </div>
+</body>
+</html>
